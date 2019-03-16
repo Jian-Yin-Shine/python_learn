@@ -81,7 +81,6 @@ def fun(ls=None):
 
 
 
-
 # 匿名函数
 ums = lambda arg1, *arg2 : arg1 + sum(arg2)
 sums(1,1,2)
