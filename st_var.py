@@ -62,6 +62,26 @@ fun(ls)
 # [10, 20, [1, 2, 3, 4]]
 
 
+def fun(ls=[])
+    ls.append('end')
+    print(ls)
+    
+fun()
+# ['end']
+fun()
+# ['end', 'end']
+# 第一次调用ls 变量指向对象 [],然后增加‘end’，此时对象[]已经修改，下一次调用fun，ls指向的对象已经被修改了
+
+# modify
+def fun(ls=None):
+    if ls==None:
+        ls = []
+    ls.append('end')
+    print(ls)
+
+
+
+
 # 匿名函数
 ums = lambda arg1, *arg2 : arg1 + sum(arg2)
 sums(1,1,2)
