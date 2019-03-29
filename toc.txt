@@ -1,0 +1,18 @@
+语法
+
+st_var : 变量, 传参 *args, **kwargs,*, []传递, lambda
+st_var_area : 变量范围， 全局语句global, 非局部语句nonlocal，使用上层函数中定义的局部变量
+st_decorators : 装饰器，参数：要装饰的函数，返回装饰完的函数 wrapper
+st_wraps : functools.wraps 装饰函数后，被装饰的函数的名字和注释文档不会改变
+
+st_class : 实例属性self. 类属性，__私有属性
+st_class_func : 静态方法，类方法(cls)，都不能访问实例属性，对象属性
+                都可以通过类访问和实例访问
+
+st_oper : 操作符重载， __add__, __sub__, __mul__, __truediv__, __len__, __repr__
+st_total_ordering : 重载大小比较规则， __eq__, __lt__, __le__, __ge__, __gt__
+                    使用 @functools.total_ordering
+                    
+st_call : __call__ 方法， 该对象可以当作函数使用
+
+st_ploy : 多态， 新增一个子类，只需确保run()方法编写正确，不需要管原来代码如何调用
