@@ -16,3 +16,8 @@ st_total_ordering : 重载大小比较规则， __eq__, __lt__, __le__, __ge__, 
 st_call : __call__ 方法， 该对象可以当作函数使用
 
 st_ploy : 多态， 新增一个子类，只需确保run()方法编写正确，不需要管原来代码如何调用
+
+st_iter_next : 可迭代对象，实现__iter__(), __next__(),创建该类的对象，是可迭代对象，也是迭代器
+st_yield : 函数中，使用yield代替return ，这个函数就是生成器函数，是一个可迭代对象，也是迭代器
+			类中__iter__返回迭代器，那么我们可以在__iter__中使用yield
+			类中实现__reversed__(), 可使用revered()函数获得反向迭代对象	
