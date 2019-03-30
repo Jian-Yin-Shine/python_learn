@@ -12,6 +12,11 @@ for i in a:
 # 自定义可迭代对象中__iter__()返回正向可迭代对象
 # __reversed__()返回反向可迭代对象, 就可以使用内置函数reversed()函数
 
+# tips: a = Countdown(10) 返回一个可迭代对象
+#       iter(a) 为迭代器对象
+#       iter(a).next()即可遍历
+#       yield 返回当前值，等待下一次调用
+# 		该类的iter方法实现yield生成器函数
 class Countdown:
 	def __init__(self, start):
 		self.start = start
