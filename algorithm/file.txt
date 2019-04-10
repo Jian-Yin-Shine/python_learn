@@ -1,0 +1,8 @@
+python xxx.py --num-workers = 5
+python yyy.py --gpus 1,2,3
+python zzz.py --net resnet-50
+python aaa.py --data cifar10
+python bbb.py --data cifar100
+python ccc.py --data fashion-minist
+tar -cvf a.tar a/
+python ddd.py --data minist
