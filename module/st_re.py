@@ -139,3 +139,9 @@ print (re.findall('<(.*?)>', str))
 # re.search 找到一个即可
 str = '<book><title>Python</title><author>Jian</author></book><>'
 print (re.search('<(.*?)>', str))
+
+# re.match(pattern, string, flag =0)
+# 只能从开头匹配
+# re.match 尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。
+a = re.match('w{3}', 'www.runoob.com')
+print(a)
