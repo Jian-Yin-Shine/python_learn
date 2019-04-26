@@ -145,3 +145,7 @@ print (re.search('<(.*?)>', str))
 # re.match 尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。
 a = re.match('w{3}', 'www.runoob.com')
 print(a)
+
+m = re.search('to', 'Tom likes to swim too')
+# span() 返回范围， group() 返回匹配的组 m.grop([grop1, ...])
+print (m.span(), m.group())
