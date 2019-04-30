@@ -1,2 +1,10 @@
-st_time : 时间，日历模块
+st_time     : 时间，日历模块
+st_abc      : abstract base class 基类接口模块
+st_os       : 文件操作
+st_re       : 正则表达式
+st_sorted   : 排序 lambda
+st_argparse : 参数
+st_map      : 映射 map(fun, arg1,arg2...)
+st_threading: 线程模块, 自定义用户进程类，run()方法, join()
+st_threading_fun: 作用于函数上面 target=fun, args=tuple, kwargs={}
 
